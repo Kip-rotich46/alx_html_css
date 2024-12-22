@@ -1,0 +1,465 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 1093px;
+    width: 100%; /* Make it take the full width of the screen */
+    background-image: url('./images/Object.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Navigation Bar inside the hero */
+header nav {
+    position: absolute;
+    top: 35px;
+    left: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 342px); /* Center nav with margin on both sides */
+}
+
+header nav img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-right: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    margin: 20px;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+/* Styling for "Get schooled" heading */
+.hero-content h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0 auto;
+}
+
+/* Flexbox for SMILES, GRIN, LAUGH to be displayed in a row */
+.hero-content .tags {
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    gap: 20px; /* Adds space between the texts */
+    margin-bottom: 20px; /* Adds margin between the tags and button */
+}
+
+.hero-content .tags span {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+/* Button Styling */
+.hero-content button {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 162px;
+    height: 44px;
+    margin-top: 20px; /* Adds a top margin between the button and the tags */
+    background-color: #C271FF; /* Purple background */
+    border: none;
+    border-radius: 22px; /* Rounded corners */
+    color: white; /* Text color white */
+    box-shadow: 0px 2px 20px 0px #00000080; /* Box shadow */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content button:hover {
+    background-color: #5e0066; /* Darker purple when hovered */
+}
+
+/* Main typography for "Learn from the pros" */
+.hero-content h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* Styling for the word "Learn" */
+.learn{
+    color: #C271FF;
+}
+
+/* Styling for the white space in between */
+.white-space {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+}
+
+/* Styling for the "from the pros" part */
+.from-pros {
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+}
+
+/* Styling for the rest of the text */
+.hero-content h2 span.other-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+}
+
+/* Styling for the "from the pros" part with lighter weight */
+.hero-content h2 span.from-pros {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+/* Pro Section */
+.pro-section {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.pro-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.pro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.pro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pro-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.pro-card h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px;
+    margin: 5px 0;
+
+}
+
+.pro-card p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* Testimonial section */
+.testimonial {
+    background: #C271FF;
+    width: 100%;
+    height: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 1;
+}
+
+/* Styling for the image */
+.testimonial img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: to make the image circular */
+    margin-right: 20px; /* Adds spacing between the image and the text */
+}
+
+/* Styling for the text block */
+.testimonial div {
+    width: 730px;
+    text-align: center;
+    color: white; /* Text color set to white */
+}
+
+/* Styling for the blockquote */
+.testimonial blockquote {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px; /* Adds margin between the quote and name */
+    text-align: left;
+}
+
+/* Styling for the name */
+.testimonial h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 10px; /* Adds margin between the name and position */
+    text-align: left;
+}
+
+/* Styling for the position */
+.testimonial p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+    font-style: italic; /* Makes the position text italic */
+}
+
+/* Styling for the section */
+.part2_tutorials{
+    margin-bottom: 50px;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.part2_tutorials h2{
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 90px;
+}
+
+.part2_tutorials h2 span {
+    font-weight: 300;
+}
+
+.part2_tutorials h2 .most {
+    color: black;  /* "Most" in black */
+}
+
+.part2_tutorials h2 .popular {
+    color: #C271FF;  /* "Popular" in purple */
+}
+
+.part2_tutorials h2 .tutorials {
+    color: black;  /* "Tutorials" in black */
+}
+
+.part_2_tutorials {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+/* Styling for each tutorial card */
+.tutorial-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: flex-start;
+    width: 50%;
+}
+
+/* Styling for the tutorial image */
+.tutorial-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pause-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px; /* Adjust the size of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Size of the circle */
+    height: 50px; /* Size of the circle */
+}
+
+.pause-icon {
+    font-size: 24px; /* Size of the play icon */
+    color: black; /* Color of the play icon */
+}
+
+/* Styling for the tutorial title (h3) */
+.tutorial-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for the description paragraph */
+.tutorial-description {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Styling for the author section */
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the author image */
+.author-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Styling for the author's name */
+.author-name {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #C271FF;
+}
+
+.tutorial-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Adjust as necessary for spacing between rating and duration */
+}
+
+
+/* Styling for the star ratings */
+.tutorial-rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tutorial-rating i {
+    font-size: 12px;
+    color: #C271FF;
+}
+
+/* Styling for the time */
+.tutorial-time {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    color: #C271FF;
+}
