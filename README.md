@@ -17,10 +17,10 @@ This is a responsive and visually appealing website built to showcase the featur
 ## Screenshots
 
 ### Home Page
-![Home Page](./images/homePage.png)
+![Home Page](./css_advanced/images/homePage.png)
 
 ### FAQ Section
-![FAQ Section](./images/hero.png)
+![FAQ Section](./css_advanced/images/hero.png)
 
 ---
 
