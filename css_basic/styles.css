@@ -1,0 +1,145 @@
+/* Flexbox layout setup */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Softer background color */
+}
+
+/* General Reset */
+header ul {
+  list-style: none; /* Remove dots */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 30px; /* Add space between links */
+  margin: 0;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    #4caf50,
+    #2196f3
+  ); /* Gradient background */
+}
+
+header li {
+  font-size: 1.5rem; /* Increase font size */
+}
+
+header a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+}
+
+header a:hover {
+  color: lightgray; /* Lighter color on hover */
+}
+
+/* Logo styling for header */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+  color: yellow; /* Stand out color for logo */
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Article Styling */
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd; /* Highlight on hover */
+}
+
+/* Aside Styling */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #4caf50; /* A nice green color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+}
+
+footer a:hover {
+  color: #81c784; /* Lighter green on hover */
+  text-decoration: underline; /* Add underline on hover */
+  transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Styling for responsiveness */
+.works_on_smartphone {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    flex: none;
+    width: 100%;
+  }
+}
