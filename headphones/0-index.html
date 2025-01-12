@@ -1,76 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section</title>
-  <link rel="stylesheet" href="0-styles.css">
-  <!-- Link to the custom font icon stylesheet (assuming it's extracted and in the 'icons' folder) -->
-  <link rel="stylesheet" href="icons/holberton_icons.css">
-</head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">
-        <img src="images/logo_headphones.png" alt="Headphones Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#what-we-do">What We Do</a></li>
-        <li><a href="#our-results">Our Results</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
-      </ul>
-      <div class="hamburger">
-        <i class="fas fa-bars open-icon"></i> <!-- Menu Icon -->
-        <i class="fas fa-times close-icon"></i> <!-- Close Icon -->
-      </div>
-    </nav>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Headphones</title>
+        <meta name="description" content="Design from scratch" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link rel="icon" type="image/png" href="./images/favicon.png" />
+        <link rel="stylesheet" href="0-styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h2><a href=""><img src="./images/logo_headphones.png" alt="Headphones logo" width="160px"></a></h2> 
+            <input type="checkbox" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+            <nav>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Our results</a></li>
+                <li><a href="#">Contact us</a></li>
+            </nav>
+        </header>
 
-    <div class="hero-content">
-      <h1>Lorem ipsum dolor sit amet lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="spacer"></div>
-      <button class="cta-button">Call to Action</button>
-      <div class="spacer"></div>
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
-    </div>
-  </header>
-
-  <!-- What We Do Section -->
-  <section id="what-we-do">
-    <div class="container">
-      <h2>What We Do</h2>
-      <p>We specialize in providing high-quality sound and technology solutions. Here are some of our key offerings:</p>
-      <div class="services">
-        <div class="service-item">
-          <i class="holberton-school-icon holberton1"></i> <!-- Example icon from the custom font -->
-          <h3>Sound Solutions</h3>
-          <p>Providing innovative audio products to enhance your listening experience.</p>
-        </div>
-        <div class="service-item">
-          <i class="holberton-school-icon holberton2"></i>
-          <h3>Wireless Technology</h3>
-          <p>Cutting-edge wireless technology for seamless connectivity.</p>
-        </div>
-        <div class="service-item">
-          <i class="holberton-school-icon holberton3"></i>
-          <h3>Customer Support</h3>
-          <p>Dedicated support to ensure the best experience with our products.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const openIcon = document.querySelector('.open-icon');
-    const closeIcon = document.querySelector('.close-icon');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      openIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    });
-  </script>
-</body>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="background-image"></div>
+            <h1 class="hero-title">Lorem ipsum dolor sit amet consectetur</h1>
+            <h2 class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+            <a href="" class="button">Call to action</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, illum ab aliquid saepe quasi quia delectus. Cumque, repellat consequatur assumenda dolorum corrupti quasi officia nam numquam reprehenderit animi, incidunt architecto? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </section>
+    </body>
 </html>
